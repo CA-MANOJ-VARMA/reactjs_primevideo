@@ -1,7 +1,17 @@
 /* Write your CSS here */
-/* .css-moviesSlider-container {
+.css-bg-container {
+  background-color: black;
+}
+
+.css-moviesSlider-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 40px;
-} */
+  color: white;
+}
+
+.css-bannerImage-itself {
+  width: 100%;
+  height: 30vh;
+}

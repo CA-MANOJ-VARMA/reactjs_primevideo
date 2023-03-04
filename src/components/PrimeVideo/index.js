@@ -6,6 +6,13 @@ import './index.css'
 class PrimeVideo extends Component {
   render() {
     const {moviesList} = this.props
+    const comedyList = moviesList.filter(
+      eachMovie => eachMovie.categoryId === 'COMEDY',
+    )
+    const actionsList = moviesList.filter(
+      eachMovie => eachMovie.categoryId === 'ACTION',
+    )
+
     return (
       <div className="css-bg-container">
         <div className="css-banner-image">
@@ -16,7 +23,10 @@ class PrimeVideo extends Component {
           />
         </div>
         <div className="css-moviesSlider-container">
-          <MoviesSlider moviesList={moviesList} />
+          <h1>Action Movies</h1>
+          <MoviesSlider moviesList={actionsList} />
+          <h1>Comedy Movies</h1>
+          <MoviesSlider moviesList={comedyList} />
         </div>
       </div>
     )

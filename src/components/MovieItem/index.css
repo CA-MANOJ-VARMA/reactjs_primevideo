@@ -1,4 +1,9 @@
 /* Write your CSS here */
 .css-thumbanil-image {
-  width: 100px;
+  width: 200px;
+}
+
+.css-reactPlayer-container {
+  background-color: black;
+  padding: 5px;
 }
